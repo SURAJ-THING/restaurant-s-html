@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The Asian Fusion Restaurant</title>
+
+<style>
+* {margin:0;padding:0;box-sizing:border-box;}
+body {
+  font-family:'Roboto',sans-serif;
+  background:linear-gradient(to right,#fdfaf6,#fff7e6);
+  color:#333;
+}
+header {
+  background:#333;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+header h1 {
+  font-family:'Playfair Display',serif;
+  font-size:2.5em;
+}
+nav {
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+nav a {
+  color:white;
+  text-decoration:none;
+  margin:5px 10px;
+  padding:5px 10px;
+  border:1px solid #FFA500;
+  border-radius:4px;
+  transition:all 0.3s;
+}
+nav a:hover {
+  background:#FFA500;
+  color:#333;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  height: 50vh;
+  background-image: url('img/bag.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.hero h2 {
+  background:rgba(0,0,0,0.5);
+  padding:15px;
+  border-radius:5px;
+  font-size:2em;
+  animation:fadeIn 2s ease;
+}
+section {
+  padding:50px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+h2 {
+  text-align:center;
+  font-family:'Playfair Display',serif;
+  margin-bottom:30px;
+  border-bottom:2px dashed #FFA500;
+  display:inline-block;
+  padding-bottom:5px;
+}
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+.card {
+  background:white;
+  border:2px solid #FFA500;
+  border-radius:8px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+  overflow:hidden;
+  transition:transform 0.4s,box-shadow 0.4s;
+}
+.card:hover {
+  transform:scale(1.05);
+  box-shadow:0 6px 12px rgba(0,0,0,0.3);
+}
+.card img {
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+.card h3 {
+  margin:10px;
+}
+.card p {
+  margin:0 10px 10px;
+}
+form {
+  display:grid;
+  gap:10px;
+}
+input,select,textarea,button {
+  padding:10px;
+  border:1px solid #ccc;
+  border-radius:4px;
+  font-family:inherit;
+}
+input:focus,textarea:focus,select:focus {
+  border:1px solid #FFA500;
+}
+button {
+  background:#FFA500;
+  color:#333;
+  font-weight:bold;
+  border:none;
+  cursor:pointer;
+  transition:background 0.3s,transform 0.3s;
+}
+button:hover {
+  background:#e69500;
+  transform:scale(1.05);
+}
+.contact {
+  background:#333;
+  color:white;
+  text-align:center;
+  padding:30px;
+}
+.contact p {
+  margin:8px 0;
+}
+.contact i {
+  margin-right:8px;
+  color:#FFA500;
+}
+.social {
+  margin-top:10px;
+}
+.social a {
+  color:#FFA500;
+  margin:0 10px;
+  font-size:1.4em;
+  transition:color 0.3s, transform 0.3s;
+}
+.social a:hover {
+  color:white;
+  transform:scale(1.2);
+}
+iframe {
+  width:100%;
+  border:0;
+  height:300px;
+  border-radius:8px;
+  margin-top:20px;
+}
+footer {
+  text-align:center;
+  padding:15px;
+  background:#222;
+  color:#ccc;
+  font-size:0.9em;
+}
+@keyframes fadeIn {from {opacity:0;} to {opacity:1;}}
+@media(max-width:600px){
+  nav {flex-direction:column;}
+  .hero h2 {font-size:1.6em;}
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <h1>The Asian Fusion Restaurant</h1>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#specials">Specials</a>
+    <a href="#offers">Offers</a>
+    <a href="#reservation">Reserve</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <h2>Fresh Ingredients. Memorable Moments.</h2>
+</section>
+
+<!-- Menu -->
+<section id="menu">
+  <h2>Our Menu</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="img/trilogy.jpg">
+      <h3>East Asia Trilogy - 2450¥ </h3>
+      <p>With Japanese pork broth noodles, soft boiled egg and nori ,Korean Cabbage Khimchi and Chinese Pan cake with Hoisin Sauce.</p>
+    </div>
+    <div class="card">
+      <img src="img/waiboki.jpg">
+      <h3>Waiboki - 1875¥</h3>
+      <p>Neapali brand WaiWai instant noodles and Korean Tag, Odeng and Sauce with boiled egg.</p>
+    </div>
+    <div class="card" alt="Omorice Fusion Dish">
+      <img src="img/omorice.jpg">
+      <h3>Omorice Khimchi Buff MoMo - 2510¥</h3>
+      <p>A fresh and famous fusion dish of Nepal,Japan, and South Korea with Khimchi,Buff MoMo, and rice with egg from Japan.</p>
+    </div>
+    <div class="card">
+      <img src="img/sekurice.jpg">
+      <h3>Sekurice Island Platter - 2700¥</h3>
+      <p>A Nepali and Sri-Lankan Fusion of rice and spices. Nepali mutton sekuwa, Srilankan curry and rice, vegetables etc.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Today's Specials -->
+<section id="specials">
+  <h2>Today's Specials</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="img/Yamori.jpg" alt="Special Fusion Dessert">
+      <h3> Nepali–Bengali Fusion Dessert Platter - 900¥</h3>
+      <p>A trio of delights: soft Yomari drizzled with saffron syrup, classic Rasgulla with pistachio, and creamy Kheer–Payesh topped with nuts and raisins. Beautifully presented with marigold petals and edible silver leaf.
+
+</p>
+    </div>
+    <div class="card">
+      <img src="img/Aila.jpg" alt="Liquor Beverage">
+      <h3>Himalayan Aila Twist - 800¥</h3>
+      <p>Nepali craft spirit infused with fresh mountain botanicals. Served over a single clear ice cube, garnished with lime and mint, accompanied by a modern copper Aila carafe.</p>
+    </div>
+    <div class="card">
+      <img src="img/Asian.jpg" alt="Chef's Special Lunch Set">
+      <h3>South & East Asian Fusion Lunch Set – Perfect for Sharing - 3250¥</h3>
+      <p>A vibrant Asian feast with Indian Biryani, Sri Lankan curry, Bangladeshi Khichuri, Nepali Momos, Chinese Dim Sum, Thai Green Curry, Japanese Miso Soup, and Korean Kimchi, served with fresh garnishes and dipping sauces for a perfect shared meal.</p>
+    </div>
+    <div class="card">
+      <img src="img/Soju.jpg" alt="Liquor Beverage">
+      <h3>Harmony Highball - 1125¥</h3>
+      <p>A smooth blend of Korean Soju and Japanese Sake, delicately garnished with yuzu, shiso, and a cherry blossom. Elegant, refreshing, and perfectly balanced.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Special Offers -->
+<section id="offers">
+  <h2>Special Offers</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Lunch Combo</h3>
+      <p>Get a free drink with any lunch order.</p>
+    </div>
+    <div class="card">
+      <h3>Dessert Discount</h3>
+      <p>20% off all desserts today only.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Reservation -->
+<section id="reservation">
+  <h2>Reserve a Table</h2>
+  <form action="thankyou.html" method="get">
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="tel" placeholder="Phone" required>
+    <input type="date" required>
+    <input type="time" required>
+    <select required>
+      <option value="">Guests</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5+</option>
+    </select>
+    <textarea placeholder="Special Requests"></textarea>
+    <button type="submit">Reserve</button>
+  </form>
+</section>
+
+
+<!-- Reviews -->
+<section id="reviews">
+  <h2>Today's Reviews</h2>
+  <div class="grid">
+    <div class="card">
+      <p>"Absolutely loved the way they serve the fusion dish unbelievable!"</p>
+      <h3>- Krish Brown </h3>
+    </div>
+    <div class="card">
+      <p>"South & East Asian Fusion Lunch Set Asome, highly recommended restaurant to have experience of different countries test at once."</p>
+      <h3>- Mark</h3>
+    </div>
+    <div class="card">
+      <p>"Best dessert I've had all year!"</p>
+      <h3>- Hiroyama </h3>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <p><i class="fas fa-map-marker-alt"></i>7 Tanaka Monzencho, Sakyo Ward, Kyoto, Japan, 606-8225</p>
+  <p><i class="fas fa-phone"></i> 075-711-0161</p>
+  
+  <div class="social">
+  <a href="https://www.facebook.com/share/1AGopr8zjv/?mibextid=wwXIfr" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook" width="40">
+  </a>
+  <a href="https://www.instagram.com" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="40">
+  </a>
+  <a href="mailto:theasianfusionrestaurant@gmail.com" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" width="40">
+  </a>
+</div>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6534.083161363406!2d135.7767340752208!3d35.030689665436526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001085a40096db1%3A0x8c895182522ac6d1!2sThe%20Kyoto%20College%20of%20Graduate%20Studies%20for%20Informatics!5e0!3m2!1sen!2sjp!4v1751940031248!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<!-- Footer -->
+<footer>
+  &copy; 2025 The Asian Fusion Restaurant
+</footer>
+
+</body>
+</html>
